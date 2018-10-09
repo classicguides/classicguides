@@ -180,13 +180,16 @@ body {
 }
 
 /* Item Rarity Color */
-.common {
+.common,
+.q2 {
   color: #1eff00 !important;
 }
-.rare {
+.rare,
+.q3 {
   color: #0070dd !important;
 }
-.epic {
+.epic,
+.q4 {
   color: #a335ee !important;
 }
 .horde {
@@ -198,4 +201,14 @@ body {
 .grayscale {
   filter: grayscale(100%);
   cursor: not-allowed;
+}
+
+.tooltip-inner {
+  background-color: #001a33;
+  text-align: left;
+  border: 1px solid #c0c0c0;
+}
+
+.tooltip-inner th {
+  float: right;
 }
