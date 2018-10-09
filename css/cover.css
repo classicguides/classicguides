@@ -180,6 +180,9 @@ body {
 }
 
 /* Item Rarity Color */
+.q {
+  color: #fce88e !important;
+}
 .common,
 .q2 {
   color: #1eff00 !important;
@@ -207,6 +210,11 @@ body {
   background-color: #001a33;
   text-align: left;
   border: 1px solid #c0c0c0;
+  max-width: 280px !important;
+}
+
+.tooltip-inner table {
+  width: 100% !important;
 }
 
 .tooltip-inner th {
