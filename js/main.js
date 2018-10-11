@@ -32,6 +32,9 @@ function makeTall(e) {
   jQuery.ajax({
     type: 'GET',
     url: item_url,
+    beforeSend: function(xhr) {
+      xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
+    },
     success: function(res) {
       let start = res.indexOf('{');
       let end = res.indexOf('}') + 1;
