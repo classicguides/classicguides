@@ -1,3 +1,8 @@
+// Init Scrollbar
+jQuery(document).ready(function() {
+  jQuery('.container').scrollbar();
+});
+
 // Scroll To Top Button
 $('#toTop').on('click', function() {
   jQuery('.container').animate({ scrollTop: 0 }, 1000);
