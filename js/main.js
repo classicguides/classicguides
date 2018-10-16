@@ -17,43 +17,49 @@ var config = {
   out: makeShort // function = onMouseOut callback (REQUIRED)
 };
 
-// Calls hoverIntent plugin
+let currentEl = '';
+
+// Calls hoverIntent plugin & inits Tooltips
 $('[data-toggle="tooltip"]').hoverIntent(config);
+
+// Display ClassicDB Tooltip for item
+function displayTooltip(data) {
+  const icon = `https://classicdb.ch/images/icons/medium/${data.icon}.jpg`;
+  const image = `<img src="${icon}" alt="${data.name_enus}"></img>`;
+
+  // Set Title to tooltip data
+  $(currentEl).attr('title', data.tooltip_enus);
+  // Display tooltip
+  $(currentEl).tooltip('show');
+  // Prepend Image on tooltip, removing previous image first if one exists
+  $('.tooltip img:first-child').remove();
+  $('.tooltip').prepend(image);
+}
+
+// JSONP Callback Function
+const $WowheadPower = {
+  registerItem: function(item, num, data) {
+    displayTooltip(data);
+  },
+  registerSpell: function(item, num, data) {
+    displayTooltip(data);
+  }
+};
 
 // Mouse Enter function for hoverIntent()
 function makeTall(e) {
+  // Re-Assigns current element as target for callblack function
+  currentEl = e.target;
+
   const link = this.href;
   const item = link.toString().slice(22);
-  console.log(item);
-  item_id = link.toString().slice(27);
-  let item_url = `https://classicdb.ch/ajax.php?${item}&power`;
+  let item_url = `https://classicdb.ch/ajax.php?${item}&power?`;
 
   // Get Item from ClassicDB
   jQuery.ajax({
-    type: 'GET',
     url: item_url,
-    beforeSend: function(xhr) {
-      xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
-    },
-    success: function(res) {
-      let start = res.indexOf('{');
-      let end = res.indexOf('}') + 1;
-      let data = res.slice(start, end);
-      data = JSON.parse(escapeSpecialChars(data));
-
-      // let image_name = data.icon;
-      // let image_url = `https://classicdb.ch/images/icons/medium/${image_name}.jpg`;
-
-      // Capture Element
-      const el = e.target;
-      // Set Title attribute
-      $(el).attr('title', data.tooltip_enus);
-      // Display tooltip
-      $(el).tooltip('show');
-    },
-    error: function(err) {
-      console.log(err);
-    }
+    dataType: 'jsonp',
+    jsonpCallback: '$WowheadPower.registerItem'
   });
 }
 
@@ -62,21 +68,4 @@ function makeShort(e) {
   const el = e.target;
   $(el).attr('title', '');
   $(el).tooltip('hide');
-}
-
-// Formats the response body from ajax request for items
-function escapeSpecialChars(jsonString) {
-  return jsonString
-    .replace('name_enus', '"name_enus"')
-    .replace('quality', '"quality"')
-    .replace('icon', '"icon"')
-    .replace('tooltip_enus', '"tooltip_enus"')
-    .replace('model', '"model"')
-    .replace(/\\"/g, '"')
-    .replace(/\\\//g, '/')
-    .replace(/'/g, '"')
-    .replace(/="/g, "='")
-    .replace(/">/g, "'>")
-    .replace(/\\"/g, '')
-    .replace(/" c/g, "' c");
 }

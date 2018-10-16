@@ -211,6 +211,7 @@ body {
   text-align: left;
   border: 1px solid #c0c0c0;
   max-width: 280px !important;
+  float: right;
 }
 
 .tooltip-inner table {
@@ -219,4 +220,11 @@ body {
 
 .tooltip-inner th {
   float: right;
+}
+
+.tooltip img {
+  border-radius: 5px;
+  border: 1px solid #c0c0c0;
+  float: left;
+  margin-right: 2px;
 }
