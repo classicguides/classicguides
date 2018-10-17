@@ -1,6 +1,10 @@
 /*
  * Globals
  */
+@font-face {
+  font-family: LifeCraft;
+  src: url(../fonts/LifeCraft_Font.ttf);
+}
 
 .center {
   margin: 0 auto;
@@ -63,6 +67,10 @@ body {
 
 .masthead-brand {
   margin-bottom: 0;
+  font-family: LifeCraft;
+  font-size: 3rem;
+  letter-spacing: 0.4rem;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
 }
 
 .masthead-brand a:hover {
@@ -122,6 +130,7 @@ body {
   text-transform: capitalize;
   font-weight: 500;
   font-size: 1.2rem;
+  /* color: rgba(255, 255, 255, 0.5); */
 }
 
 /* Custom STYLES */
@@ -140,10 +149,6 @@ body {
   border-radius: 12px;
   margin: 0 5px;
   max-width: 60px;
-}
-
-.addon-heading {
-  font-size: 3.5rem;
 }
 
 .card {
@@ -227,4 +232,65 @@ body {
   border: 1px solid #c0c0c0;
   float: left;
   margin-right: 2px;
+}
+
+/* Social Icons
+************************************************************* */
+.social-icons {
+  position: absolute;
+  margin-bottom: 2rem;
+  width: 100%;
+  z-index: 2;
+}
+.social-icons ul {
+  margin-top: 2rem;
+  width: 100%;
+  text-align: center;
+}
+.social-icons ul > li {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: inline-block;
+}
+.social-icons ul > li > a {
+  display: block;
+  color: white;
+  background-color: rgba(51, 51, 51, 0.8);
+  border-radius: 100%;
+  font-size: 2rem;
+  line-height: 4rem;
+  height: 4rem;
+  width: 4rem;
+}
+@media (min-width: 768px) {
+  .social-icons {
+    margin: 0;
+    position: absolute;
+    right: 2.5rem;
+    bottom: 2rem;
+    width: auto;
+  }
+  .social-icons ul {
+    margin-top: 0;
+    width: auto;
+  }
+  .social-icons ul > li {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  .social-icons ul > li:last-child {
+    margin-bottom: 0;
+  }
+  .social-icons ul > li > a {
+    transition: all 0.2s ease-in-out;
+    font-size: 2rem;
+    line-height: 4rem;
+    height: 4rem;
+    width: 4rem;
+  }
+  .social-icons ul > li > a:hover {
+    background-color: #bbbdbe;
+  }
 }
