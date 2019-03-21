@@ -20,6 +20,9 @@
   <link rel="stylesheet" href="css/jquery.scrollbar.css">
   <!-- Favicon -->
   <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon">
+    <!-- Classic Wowhead Tooltips -->
+    <script>var whTooltips = { colorLinks: true, iconizeLinks: true, renameLinks: true };</script>
+    <script src="https://wow.zamimg.com/widgets/power.js"></script>
 </head>
 
 <body>
@@ -49,7 +52,7 @@
 
           </div>
 
-          <div class="dropdown show ml-3">
+          <!-- <div class="dropdown show ml-3">
             <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
               Profession Guides
@@ -65,11 +68,11 @@
               <a class="dropdown-item disabled" href="#">Skinning</a>
               <a class="dropdown-item disabled" href="#">Tailoring</a>
             </div>
-          </div>
+          </div>-->
           <a class="nav-link ml-3" href="addons.html">Addons</a>
-          <a class="nav-link" href="https://classicdb.ch/" target="_blank">ClassicDB</a>
+          <a class="nav-link" href="https://classic.wowhead.com/database" target="_blank">Wowhead DB</a>
         </nav>
-      </div>
+      </div> 
     </header>
 
     <main role="main" class="mt-3">
@@ -90,7 +93,7 @@
           <a class="nav-link active show" data-toggle="tab" href="#overview">Overview</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#talents">Talents</a>
+          <a class="nav-link" data-toggle="tab" href="#talents">60 Talents</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#gear">Pre-Raid Gear</a>
@@ -98,14 +101,17 @@
         <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#enchants">Enchants</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#consumables">Consumables</a>
-        </li>
-        <li class="nav-item">
+        </li> -->
+        <!-- <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#healing">Healing</a>
-        </li>
-        <li class="nav-item">
+        </li> -->
+        <!-- <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#stats">Stat Priorities</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#leveling">Leveling</a>
         </li>
       </ul>
 
@@ -188,86 +194,62 @@
           <hr>
         </div>
 
-        <!-- Stat Priority -->
-        <div class="tab-pane fade" id="stat-priority">
-          <br>
-          <h3 class="warrior">Stat Priorities</h3>
-          <ol>
-            <li>Hit</li>
-            <li>Crit / Strength</li>
-          </ol>
-
-          <p>You shold reach the soft hitcap (8%) as soon as possbile. Your abilities can no longer miss at this
-            point.
-            <br> You should stack as much hit as possible, because most of your damage comes from white hits
-            (auto attacks).
-            <br> You should use a fast offhandm because Whirlwind doesn't use your offhand in Classic. It's also
-            better for rage generation.</p>
-
-
-          <p>I strongly recommend downloading the addon Theorycraft. This will expand the ingame tooltip of your
-            spells and give detailed information about the items you’re wearing and their effect on your
-            spells.
-          </p>
-        </div>
-
         <!-- Enchants Tab -->
         <div class="tab-pane fade" id="enchants">
           <br>
           <h3 class="priest">Enchants</h3>
-          <p>Ensuring you have the proper enchants on your gear not only will ensure you are maximizing your HPS
-            output, but will also make sure you are taken seriously.</p>
-
           <h5 class="priest">Healing</h5>
           <ul>
             <li>Helm:
-              <a href="https://classicdb.ch/?item=19789" class="rare" target="_blank" data-toggle="tooltip" data-html="true">Prophetic
+              <a href="https://classic.wowhead.com/item=19789/prophetic-aura" target="_blank">Prophetic
                 Aura</a> >
-              <a href="https://classicdb.ch/?item=18330" class="common" target="_blank" data-toggle="tooltip" data-html="true">Arcanum
+              <a href="https://classic.wowhead.com/item=18330/arcanum-of-focus" target="_blank">Arcanum
                 of Focus</a>
             </li>
 
             <li>Shoulder:
-              <a href="https://classicdb.ch/?item=20078" class="rare" target="_blank" data-toggle="tooltip" data-html="true">Zandalar
+              <a href="https://classic.wowhead.com/item=20078/zandalar-signet-of-serenity" target="_blank">Zandalar
                 Signet of Serenity</a>
             </li>
 
             <li>Cloak:
-              <a href="https://classicdb.ch/?spell=25084" class="rare" target="_blank" data-toggle="tooltip" data-html="true">Sublety</a>
+              <a href="https://classic.wowhead.com/item=20735/formula-enchant-cloak-subtlety" target="_blank">Subtlety</a>
             </li>
 
             <li>Chest:
-              <a href="https://classicdb.ch/?spell=20025" class="rare" target="_blank" data-toggle="tooltip" data-html="true">Greater
+              <a href="https://classic.wowhead.com/spell=20025/enchant-chest-greater-stats" target="_blank">Greater
                 Stats</a>
             </li>
 
             <li>Wrist:
-              <a href="https://classicdb.ch/?item=19447" class="rare" target="_blank" data-toggle="tooltip" data-html="true">Healing</a>
+              <a href="https://classic.wowhead.com/spell=23802/enchant-bracer-healing-power" target="_blank">Healing Power</a>
             </li>
 
             <li>Gloves:
-              <a href="https://classicdb.ch/?item=20730" class="rare" target="_blank" data-toggle="tooltip" data-html="true">Healing
+              <a href="https://classic.wowhead.com/spell=25079/enchant-gloves-healing-power
+              " target="_blank">Healing
                 Power</a>
             </li>
 
             <li>Legs:
-              <a href="https://classicdb.ch/?item=19789" class="rare" target="_blank" data-toggle="tooltip" data-html="true">Prophetic
+              <a href="https://classic.wowhead.com/item=19789/prophetic-aura" target="_blank">Prophetic
                 Aura</a> >
-              <a href="https://classicdb.ch/?item=18330" class="common" target="_blank" data-toggle="tooltip" data-html="true">Arcanum
+              <a href="https://classic.wowhead.com/item=18330/arcanum-of-focus" c target="_blank">Arcanum
                 of Focus</a>
             </li>
 
             <li>Boots:
-              <a href="https://classicdb.ch/?spell=13890" class="rare" target="_blank" data-toggle="tooltip" data-html="true">Minor
+              <a href="https://classic.wowhead.com/spell=13890/enchant-boots-minor-speed
+              " target="_blank">Minor
                 Speed</a>
             </li>
 
             <li>1-Hand Weapons:
-              <a href="https://classicdb.ch/?spell=22750" class="rare" target="_blank" data-toggle="tooltip" data-html="true">Healing
+              <a href="https://classic.wowhead.com/spell=22750/enchant-weapon-healing-power" target="_blank">Healing
                 Power</a>
             </li>
             <li>2-Hand Weapons:
-              <a href="https://classicdb.ch/?spell=23803" class="rare" target="_blank" data-toggle="tooltip" data-html="true">Mighty
+              <a href="https://classic.wowhead.com/spell=23803/enchant-weapon-mighty-spirit" target="_blank">Mighty
                 Spirit </a>
             </li>
 
@@ -277,7 +259,7 @@
         </div>
 
         <!-- Consumables Tab -->
-        <div class="tab-pane fade" id="consumables">
+        <!-- <div class="tab-pane fade" id="consumables">
           <br>
           <h3 class="priest">Consumables</h3>
           <p>Below I’ve listed some common consumables. There are others out there of course, but this should do you
@@ -316,10 +298,10 @@
           <p>Depending on your server, some of the above consumables may not stack with buffs (e.g. Crystal Force and
             Divine Spirit). Be sure to investigate before obtaining too many.</p>
           <hr>
-        </div>
+        </div> -->
 
         <!-- Healing Tab -->
-        <div class="tab-pane fade" id="healing">
+        <!-- <div class="tab-pane fade" id="healing">
           <br>
           <h3 class="priest">Healing Essentials</h3>
           <br>
@@ -426,10 +408,10 @@
             heal on the tank before he’s had a chance to build threat on multiple targets which means they’ll come
             straight for you.</p>
           <hr>
-        </div>
+        </div> -->
 
         <!-- Stat Priority -->
-        <div class="tab-pane fade" id="stats">
+        <!-- <div class="tab-pane fade" id="stats">
           <br>
           <h3 class="priest">Stat Priorities</h3>
           <br>
@@ -444,8 +426,96 @@
           </ol>
 
           <hr>
+        </div> -->
+
+        <div class="tab-pane fade" id="leveling">
+          <br>
+          <h3 class="priest">Leveling 1-60</h3>
+          <p>Priest are one of the easiest classes to level if done right. You’ll use a wand as your primary source of damage dealing and rely on the mana regeneration provided from the Spirit Tap talent. Levelling this way means you should never go out of mana (OOM) unless you pull too many mobs at once and need to heal yourself. This saves you a lot of time and money as you won’t need to drink to regenerate mana—though you should carry some drinks just in case.</p>
+
+          <h5 class="priest">Gear</h5>
+          <p>As you’re leveling, always prioritize spirit and then intellect. Stamina isn’t that important as you have <a href="https://classic.wowhead.com/spell=1243/power-word-fortitude" target="_blank">Power Word: Fortitude</a>, <a href="https://classic.wowhead.com/spell=17/power-word-shield" target="_blank" rel="noopener noreferrer">Power Word: Shield</a> and healing spells. As you get to the level 40 or so mark, gear will start giving you + spell damage and healing. These pieces are only worth it if there’s still some spirit/intellect on them but not otherwise. See the <a href="https://classic.wowhead.com/search?q=dreamweave" target="_blank" rel="noopener noreferrer" class="rare">Dreamweave</a> set (Circlet, Vest and Gloves) — these are appropriate items for a leveling priest and give you a good idea of what to look for.</p>
+
+          <h5 class="priest">Wands</h5>
+          <p class="mb-0">Level 5 - <a href="https://classic.wowhead.com/item=11287/lesser-magic-wand" target="_blank" rel="noopener noreferrer">Lesser Magic Wand</a> Crafted, ask an enchanter to make one for you. It's worth spending some money on it if you can.</p>
+          <p class="mb-0">Level 13 - <a href="https://classic.wowhead.com/item=11288/greater-magic-wand" target="_blank" rel="noopener noreferrer">Greater Magic Wand</a> Crafted, ask an enchanter to make one for you. It's worth spending some money on it if you can.</p>
+          <p class="mb-0">Level 17 - <a href="https://classic.wowhead.com/item=5198/cookies-stirring-rod" target="_blank" rel="noopener noreferrer">Cookie's Stirring Rod</a> Obtained from the Deadmines instance, do a run and hope for the best but don’t spend too much time trying to get it. </p>
+          <p class="mb-0">Level 18 - <a href="https://classic.wowhead.com/item=7001/gravestone-scepter" target="_blank" rel="noopener noreferrer">Gravestone Scepter</a> Obtained from a chain quest that starts at level 18. Realistically you won’t finish the quest until around level 24 when you run Blackfathom Deeps with a group. This one lasts you a while so it’s worth the effort. </p>
 
 
+          <hr>
+
+          <h5 class="priest">Talents</h5>
+          <p>If you’re new to the priest class, you should familiarise yourself with their available <a href="https://classicdb.ch/?talent#b" target="_blank" rel="noopener noreferrer" class="q">talents</a> before you start selecting them at level 10. I’d recommend following the path below:</p>
+          <ul>
+            <li>10-14: Wand Specialization</li>
+            <li>15-19: Spirit Tap</li>
+          </ul>
+          <p>Note, these are non-negotiable for leveling. Wanding will be one of your main sources for damage and Spirit Tap gives you the mana regeneration you need in between kills to just keep going.</p>
+          <ul>
+            <li>20-21: Improved Shadow Word: Pain</li>
+            <li>22-24: Improved Power Word: Shield</li>
+            <li>25-26: Improved Power Word: Fortitude</li>
+            <li>27-29: Meditation</li>
+            <li>30: Inner Focus</li>
+            <li>31: Martyrdom</li>
+            <li>32-35: Mental Agility</li>
+          </ul>
+          <p>At level 36, Mind Flay Rank 3 becomes available and is now viable in terms of damage per mana. This is when you should respec to a shadow build, and while I know it’s tempting, you should hold off getting Shadowform until level 45 (see below) as you still require Wand Specialization to maximise efficiency.</p>
+          <ul>
+            <li>10-14: Wand Specialization</li>
+            <li>15-19: Spirit Tap</li>
+            <li>20-21: Improved Shadow Word: Pain</li>
+            <li>22-24: Shadow Focus(highly recommended over Blackout)</li>
+            <li>25: Mind Flay</li>          
+            <li>26-27: Improved Psychic Scream (So you can grab silence later)</li>
+            <li>28-29: Shadow Focus</li>
+            <li>30-32: Shadow Reach</li>
+            <li>33-34: Shadow Weaving</li>
+            <li>35: Silence</li>
+            <li>36: Vampiric Embrace</li>
+            <li>37-39: Shadow Weaving</li>
+            <li>40-44: Darkness</li>
+            <li>45: Shadowform</li> 
+          </ul>
+
+          <p>From here, which talents you choose won’t really make much of a difference. I would recommend going back down the Discipline tree as it gives you more survivability and mana regeneration. If you’re on a high pop server with a lot of world PVP, you should consider picking up 2/2 Healing Focus so your heals aren’t interrupted when out of Shadowform.</p>
+          <ul>
+            <li>46-47: Healing Focus</li>
+            <li>48-50: Improved Power Word: Shield</li>
+            <li>51-52: Improved Power Word: Fortitude</li>
+            <li>53: Inner Focus</li>
+            <li>54-56: Meditation</li>
+            <li>57: Unbreakable Will</li>
+            <li>58-60: Mental Agility</li>
+          </ul>
+          <p>Also, while we’re talking about talents, you don’t need to respec to heal instances until at least 58. To be honest I wouldn’t even do this, as the last two levels are the longest levels so it’s better to just smash them out first and then start working on your pre-BiS gear.</p>
+
+          <hr>
+
+          <h5 class="priest">Spell Rotation</h5>
+          <p class="mb-0">Levels 1-36:</p>
+          <ol>
+            <li>Power Word: Shield</li>
+            <li>Mind Blast</li>
+            <li>Shadow Word: Pain</li>
+            <li>Smite x1 (x2 if the mob is not at 50% health yet</li>
+            <li>Wand until the mob dies, gain Spirit Tab to regen mana</li>
+            <li>Rinse and Repeat!</li>
+          </ol>
+
+          <p class="mb-0 bold">Levels 36+ (After respeccing to shadow)</p>
+          <ol>
+            <li>Power Word: Shield</li>
+            <li>Mind Blast</li>
+            <li>Shadow Word: Pain</li>
+            <li>Vampiric Embrace</li>
+            <li>Mind Flay x1 (x2 if the mob is not at 50% health yet)</li>
+            <li>Wand until mob dies, gain Spirit Tap to regen mana</li>
+            <li>Rinse and Repeat!</li>
+          </ol>
+
+          <p>You can mix the rotation up now and then if you’re finding at the end of each kill you have too much mana left (e.g. cast more Smites, Mind Flays or another Mind Blast) or too little mana left (Power Word: Shield less often, wand more). It’ll depend on the level/HP of the mobs you’re dealing with as well as how much damage you’re taking.</p>
         </div>
       </div>
     </main>
