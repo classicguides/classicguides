@@ -53,7 +53,7 @@
 
           </div>
 
-          <div class="dropdown show ml-3">
+          <!-- <div class="dropdown show ml-3">
             <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
               Profession Guides
@@ -69,17 +69,20 @@
               <a class="dropdown-item disabled" href="#">Skinning</a>
               <a class="dropdown-item disabled" href="#">Tailoring</a>
             </div>
-          </div>
+          </div> -->
           <a class="nav-link ml-3" href="addons.html">Addons</a>
-          <a class="nav-link" href="https://classic.wowhead.com/database" target="_blank">Database</a>
+          <a class="nav-link" href="https://classic.wowhead.com/database" target="_blank">Wowhead DB</a>
         </nav>
       </div>
     </header>
 
     <main role="main" class="mt-3">
 
-      <div class="row mx-0">
-        <h1 class="cover-heading  hunter mb-3">Hunter</h1>
+      <div class="row mx-0 class-header">
+        <div class="class-id">
+          <h1 class="cover-heading hunter">Hunter</h1>
+          <img src="/imgs/Original/Hunter.png" alt="Hunter" class="ml-3">
+        </div>
         <p class="ml-auto">
           <span class="hunter">Source:</span> <a href="http://vanillawowhunter.com/" target="_blank">VanillaWowHunter.com
             &nearr;</a>
@@ -91,23 +94,27 @@
           <a class="nav-link active show" data-toggle="tab" href="#overview">Overview</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#talents">Talents</a>
+          <a class="nav-link" data-toggle="tab" href="#talents">60 Talents</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#gear">Pre-Raid Gear</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#stats">Stats</a>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#enchants">Enchants</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#consumables">Consumables</a>
-        </li>
+        </li> -->
         <li class="nav-item">
+            <a href="#leveling" data-toggle="tab" class="nav-link">Leveling & Pets</a>
+          </li>
+        <!-- <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#pets">Pets</a>
-        </li>
+        </li> -->
+
 
       </ul>
 
@@ -141,7 +148,7 @@
         </div>
 
         <!-- Stats Tab -->
-        <div class="tab-pane fade" id="stats">
+        <!-- <div class="tab-pane fade" id="stats">
           <br>
           <h3 class="hunter">Stats</h3>
           <p>The first thing you need to know about playing hunter is you want to be doing as much ranged damage
@@ -160,42 +167,40 @@
             for PVE prioritise Intellect (to be able to use more abilities before running out of mana for
             higher DPS).</p>
           <hr>
-          <!-- <p class="text-muted">source:
-            <a href="http://Classicwowhunter.com/Classic-wow-hunter-guide/#stats" target="_blank">Classicwowhunter.com</a>
-          </p> -->
-        </div>
+        </div> -->
 
         <!-- Talents Tab -->
         <div class="tab-pane fade" id="talents">
           <br>
           <h3 class="hunter">Talents</h3>
-          <br>
-          <h4 class="hunter">Pre-Raid Talents</h4>
           <p>There are 3 builds listed below. One is centered around Marksmanship, one around Beast Mastery and
             the other is PVP orientated. You can follow the link to the talent calculator to see what each
             talent does and test out tweaking the builds to suit you..</p>
-          <p>
-            <a href="https://classicdb.ch/?talent#cx0G0xxZViohtht" target="_blank">Marksmanship (20/31/0) &nearr;</a>
-            <br> Marksmanship will give you decent DPS for raiding. It gets all the essentials from MM (Marksmanship)
+          <p>          
+            Marksmanship will give you decent DPS for raiding. It gets all the essentials from MM (Marksmanship)
             while also getting Improved AotH & talents that help your pet do more damage from BM (Beast mastery).
+            <br> 
+            <a href="https://classicdb.ch/?talent#cx0G0xxZViohtht" target="_blank">Marksmanship (20/31/0) &nearr;</a>
           </p>
           <img src="imgs/hunter-marksmanship.png" alt="17/31/3" class="img-fluid">
           <hr>
 
-          <p>
-            <a href="https://classicdb.ch/?talent#cx0GdxxktVqohx" target="_blank">Beast Mastery (31/20/0) &nearr;</a>
-            <br> BM is good for levelling your hunter. This build gets you all the essential BM talents as well
+          <p>            
+            BM is good for leveling your hunter. This build gets you all the essential BM talents as well
             as getting you Aimed Shot and Mortal Shots from the MM tree.
+            <br> 
+            <a href="https://classicdb.ch/?talent#cx0GdxxktVqohx" target="_blank">Beast Mastery (31/20/0) &nearr;</a>
           </p>
           <img src="imgs/hunter-beastmastery.png" alt="17/31/3" class="img-fluid">
           <hr>
 
           <p>
-            <a href="https://classicdb.ch/?talent#cZtVohtZI0Vwohux" target="_blank">Lightning Reflexes PVP (0/21/30)
-              &nearr;</a>
-            <br> The Lightning Reflexes Build is great for PVP. It gets Aimed Shot, Lethal Shots, Mortal Shots
+            The Lightning Reflexes Build is great for PVP. It gets Aimed Shot, Lethal Shots, Mortal Shots
             and Scatter Shot from Marksmanship while still being able to reach Lightning Reflexes on the
             Survival Tree.
+            <br> 
+            <a href="https://classicdb.ch/?talent#cZtVohtZI0Vwohux" target="_blank">Lightning Reflexes PVP (0/21/30)
+              &nearr;</a>
           </p>
           <img src="imgs/hunter-pvp.png" alt="17/31/3" class="img-fluid">
           <hr>
@@ -308,46 +313,56 @@
             output, but will also make sure you are taken seriously.</p>
           <ul>
             <li>
-              <strong>Helm</strong>: <a href="https://classic.wowhead.com/item=20077/zandalar-signet-of-might" target="_blank"></a> > 8 Agility
+              <strong>Helm</strong>: <a href="https://classic.wowhead.com/item=19785/falcons-call" target="_blank"></a> >
+              <a href="https://classic.wowhead.com/item=11647/lesser-arcanum-of-voracity" target="_blank"></a>
             </li>
 
             <li>
-              <strong>Shoulder</strong>: 30 Attack Power</li>
+              <strong>Shoulder</strong>: 
+              <a href="https://classic.wowhead.com/item=20077/zandalar-signet-of-might" target="_blank"></a>
+            </li>
 
             <li>
-              <strong>Cloak</strong>: 3 Agility
+              <strong>Cloak</strong>: <a href="https://classic.wowhead.com/spell=13882/enchant-cloak-lesser-agility" target="_blank"></a>
             </li>
 
             <li>          
               <strong>Chest</strong>:
-              <a href="https://classicdb.ch/?spell=20025" class="rare" target="_blank">Greater Stats</a>
+              <a href="https://classic.wowhead.com/spell=20025/enchant-chest-greater-stats" target="_blank"></a>
             </li>
 
             <li>
-              <strong>Wrist</strong>: 1 Agility >
-              <a href="https://classicdb.ch/?spell=23801" class="rare" target="_blank">Mana Regeneration</a> /
-              <a href="https://classicdb.ch/?spell=20011" class="rare" target="_blank">Superior Stamina</a>
+              <strong>Wrist</strong>: 
+              <a href="https://classic.wowhead.com/spell=7779/enchant-bracer-minor-agility" target="_blank"></a> >
+              <a href="https://classic.wowhead.com/spell=23801/enchant-bracer-mana-regeneration" target="_blank"></a> /
+              <a href="https://classic.wowhead.com/spell=20011/enchant-bracer-superior-stamina" target="_blank"></a>
             </li>
 
             <li>
-              <strong>Gloves</strong>: 15 Agility
+              <strong>Gloves</strong>: 
+                <a href="https://classic.wowhead.com/spell=25080/enchant-gloves-superior-agility" target="_blank"></a>
             </li>
 
             <li>
-              <strong>Legs</strong>: ZG Idol > 8 Agility
+                <strong>Legs</strong>: <a href="https://classic.wowhead.com/item=19785/falcons-call" target="_blank"></a> >
+                <a href="https://classic.wowhead.com/item=11647/lesser-arcanum-of-voracity" target="_blank"></a>
+              </li>
+
+            <li>
+              <strong>Boots</strong>: 
+              <a href="https://classic.wowhead.com/spell=13935/enchant-boots-agility" target="_blank"></a> >
+              <a href="https://classic.wowhead.com/spell=13890/enchant-boots-minor-speed" target="_blank"></a> /
+              <a href="https://classic.wowhead.com/spell=20020/enchant-boots-greater-stamina" target="_blank"></a>
             </li>
 
             <li>
-              <strong>Boots</strong>: 7 Agility >
-              <a href="https://classicdb.ch/?spell=13890" class="rare" target="_blank">Minor Speed</a> /
-              <a href="https://classicdb.ch/?spell=20020" class="rare" target="_blank">Greater Stamina</a>
-            </li>
-
-            <li>
-              <strong>Melee Weapons</strong>: 15 Agility on each / 25 Agility for 2hand
+              <strong>Melee Weapons</strong>: 
+              <a href="https://classic.wowhead.com/spell=23800/enchant-weapon-agility" target="_blank"></a> for 1H weapons - 
+              <a href="https://classic.wowhead.com/spell=27837/enchant-2h-weapon-agility" target="_blank"></a> for 2H weapons
             </li>
             <li>
-              <strong>Ranged Weapons</strong>: 3% hit scope if you are not at 9% hit, else use +7 Damage
+              <strong>Ranged Weapons</strong>: 
+              <a href="https://classic.wowhead.com/item=18283/biznicks-247x128-accurascope" target="_blank"></a> if you are not at 9% hit, else use <a href="https://classic.wowhead.com/item=10548/sniper-scope" target="_blank"></a>
             </li>
           </ul>
           <hr>
@@ -443,8 +458,26 @@
           </p> -->
         </div>
 
+        <div class="tab-pane fade" id="leveling">
+          <br>
+          <h3 class="hunter">Leveling</h3>
+          <h4 class="hunter">Talents</h4>
+          <p>
+             Beast Mastery is great for leveling your hunter. This build gets you all the essential BM talents as well as getting you Aimed Shot and Mortal Shots from the MM tree. 
+            <br>
+            <a href="https://classicdb.ch/?talent#cx0GdxxktVqohx" target="_blank"><b>Beast Mastery 31/20/0 &nearr;</b></a>
+          </p>
+          <a href="#!" target="_blank" rel="noopener noreferrer">
+            <img src="imgs/hunter-leveling-talents.png" alt="31/20/0">
+          </a>
+          <hr>
+
+          <h4 class="hunter">Pets</h4>
+          <p>For more information on hunter pets such as types, pets by zone, and skills - check out this amazing guide over on <a href="http://vanillawowhunter.com/vanilla-wow-hunter-pets/" target="_blank"><b>Vanilla WoW Hunter &nearr;</b></a> </p>
+        </div>
+
         <!-- Pets Tab -->
-        <div class="tab-pane fade" id="pets">
+        <!-- <div class="tab-pane fade" id="pets">
           <br>
           <h3 class="hunter">Pets</h3>
           <p>Pets for PVE - Where to find them, and how to tame them.</p>
@@ -482,10 +515,7 @@
             <br> Don’t learn cower, you dont need it and waste of skills. – you can retrain them at pet trainer
             if you make mistake so dont panic.</p>
           <hr>
-          <!-- <p class="text-muted">source:
-            <a href="https://legacy-wow.com/hunter-guide-Classic/" target="_blank">Classic-wow.wikia.com</a>
-          </p> -->
-        </div>
+        </div> -->
       </div>
     </main>
 

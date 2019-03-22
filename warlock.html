@@ -20,6 +20,9 @@
   <link rel="stylesheet" href="css/jquery.scrollbar.css">
   <!-- Favicon -->
   <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon">
+  <!-- Classic Wowhead Tooltips -->
+  <script>var whTooltips = { colorLinks: true, iconizeLinks: true, renameLinks: true };</script>
+  <script src="https://wow.zamimg.com/widgets/power.js"></script>
 </head>
 
 <body>
@@ -46,10 +49,9 @@
             <a class="dropdown-item" href="shaman.html">Shaman</a>
             <a class="dropdown-item list-item-active" href="warlock.html">Warlock</a>
             <a class="dropdown-item" href="warrior.html">Warrior</a>
-
           </div>
 
-          <div class="dropdown show ml-3">
+          <!-- <div class="dropdown show ml-3">
             <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
               Profession Guides
@@ -65,17 +67,22 @@
               <a class="dropdown-item disabled" href="#">Skinning</a>
               <a class="dropdown-item disabled" href="#">Tailoring</a>
             </div>
-          </div>
+          </div> -->
+
           <a class="nav-link ml-3" href="addons.html">Addons</a>
-          <a class="nav-link" href="https://classicdb.ch/" target="_blank">ClassicDB</a>
+          <a class="nav-link" href="https://classic.wowhead.com/database" target="_blank">Wowhead DB</a>
         </nav>
       </div>
     </header>
 
     <main role="main" class="mt-3">
 
-      <div class="row mx-0">
-        <h1 class="cover-heading warlock mb-3">Warlock</h1>
+      <div class="row mx-0 class-header">
+        <div class="class-id">
+          <h1 class="cover-heading warlock">Warlock</h1>
+          <img src="/imgs/Original/Warlock.png" alt="Warlock" class="ml-3">
+        </div>
+        
         <p class="ml-auto"><span class="warlock">Author:</span> Botmaster5
           <br>
           <span class="warlock">Source:</span> <a href="https://forum.nostalrius.org/viewtopic.php?f=40&t=14455" target="_blank">Nostalrius
@@ -87,10 +94,7 @@
           <a class="nav-link active show" data-toggle="tab" href="#overview">Overview</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#leveling">Leveling</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#stat-priority">Dungeon/Raid Spec</a>
+          <a class="nav-link" data-toggle="tab" href="#stat-priority">60 Talents</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#gear">Pre-Raid Gear</a>
@@ -99,8 +103,11 @@
           <a class="nav-link" data-toggle="tab" href="#enchants">Enchants</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#consumables">Consumables</a>
+          <a class="nav-link" data-toggle="tab" href="#leveling">Leveling</a>
         </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#consumables">Consumables</a>
+        </li> -->
       </ul>
       <div id="myTabContent" class="tab-content">
 
@@ -279,7 +286,7 @@
         <!-- Dungeon/Raid Specs -->
         <div class="tab-pane fade" id="stat-priority">
           <br>
-          <h3 class="warlock">Dungeon/Raid Spec</h3>
+          <h3 class="warlock">Talents</h3>
           <p>You’ve just hit 60, congrats!! Now what? If you want to continue to quest grind for gold, rewards, and
             rep, by all means keep your same spec and go to town. However, if you find yourself with the inclining to
             start running dungeons for loot and eventually getting into a raiding guild, here is what you should
@@ -318,62 +325,60 @@
         <div class="tab-pane fade" id="enchants">
           <br>
           <h3 class="warlock">Enchants</h3>
-          <p>Ensuring you have the proper enchants on your gear not only will ensure you are maximizing your DPS
-            output, but will also make sure you are taken seriously.</p>
           <ul>
             <li>Helm:
-              <a href="https://classicdb.ch/?item=19788" class="common" target="_blank" data-toggle="tooltip" data-html="true">Hoodoo
+              <a href="https://classic.wowhead.com/item=19788/hoodoo-hex" target="_blank">Hoodoo
                 Hex</a> >
-              <a href="https://classicdb.ch/?item=18330" class="common" target="_blank" data-toggle="tooltip" data-html="true">Arcanum
+              <a href="https://classic.wowhead.com/item=18330/arcanum-of-focus" target="_blank">Arcanum
                 of Focus</a>
             </li>
 
             <li>Shoulder:
-              <a href="https://classicdb.ch/?item=20076" class="rare" target="_blank" data-toggle="tooltip" data-html="true">Zandalar
+              <a href="https://classic.wowhead.com/item=20076/zandalar-signet-of-mojo" target="_blank">Zandalar
                 Signet of Mojo</a> –
               requires Exalted Reputation with Zul’Gurub</li>
             <li>Cloak:
-              <a href="https://classicdb.ch/?item=16216" class="common" target="_blank" data-toggle="tooltip" data-html="true">Greater
+              <a href="https://classic.wowhead.com/spell=20014/enchant-cloak-greater-resistance" target="_blank">Greater
                 Resistance</a>
             </li>
 
             <li>Chest:
-              <a href="https://classicdb.ch/?spell=20025" class="common" target="_blank" data-toggle="tooltip"
-                data-html="true">Greater Stats</a> >
-              <a href="https://classicdb.ch/?item=16242" class="common" target="_blank" data-toggle="tooltip" data-html="true">Major
+              <a href="https://classic.wowhead.com/spell=20025/enchant-chest-greater-stats" target="_blank"
+                >Greater Stats</a> >
+              <a href="https://classic.wowhead.com/spell=20028/enchant-chest-major-mana" target="_blank">Major
                 Mana</a></li>
 
             <li>Wrist:
-              <a href="https://classicdb.ch/?item=16214" class="common" target="_blank" data-toggle="tooltip" data-html="true">Greater
+              <a href="https://classic.wowhead.com/spell=20008/enchant-bracer-greater-intellect" target="_blank">Greater
                 Intellect</a> >
-              <a href="https://classicdb.ch/?spell=20011" class="common" target="_blank" data-toggle="tooltip"
-                data-html="true">Superior Stamina</a>
+              <a href="https://classic.wowhead.com/spell=20011/enchant-bracer-superior-stamina" target="_blank"
+                >Superior Stamina</a>
             </li>
 
             <li>Gloves:
-              <a href="https://classicdb.ch/?item=11226" class="common" target="_blank" data-toggle="tooltip" data-html="true">Riding
+              <a href="https://classic.wowhead.com/spell=13947/enchant-gloves-riding-skill" target="_blank">Riding
                 Skill</a>
             </li>
 
             <li>Legs:
-              <a href="https://classicdb.ch/?item=19788" class="common" target="_blank" data-toggle="tooltip" data-html="true">Hoodoo
+              <a href="https://classic.wowhead.com/item=19788/hoodoo-hex" target="_blank">Hoodoo
                 Hex</a> >
-              <a href="https://classicdb.ch/?item=18330" class="common" target="_blank" data-toggle="tooltip" data-html="true">Arcanum
+              <a href="https://classic.wowhead.com/item=18330/arcanum-of-focus" target="_blank">Arcanum
                 of Focus</a>
             </li>
 
             <li>Boots:
-              <a href="https://classicdb.ch/?spell=13890" class="rare" target="_blank" data-toggle="tooltip" data-html="true">Minor
+              <a href="https://classic.wowhead.com/spell=13890/enchant-boots-minor-speed" target="_blank">Minor
                 Speed</a> is my
               preferred
               choice, others may go with
-              <a href="https://classicdb.ch/?spell=20020" class="rare" target="_blank" data-toggle="tooltip" data-html="true">Greater
+              <a href="https://classic.wowhead.com/spell=20020/enchant-boots-greater-stamina" target="_blank">Greater
                 Stamina</a> or
-              <a href="https://classicdb.ch/?spell=20024" class="rare" target="_blank" data-toggle="tooltip" data-html="true">Spirt</a>
+              <a href="https://classic.wowhead.com/spell=20024/enchant-boots-spirit" target="_blank">Spirt</a>
             </li>
 
             <li>Weapon:
-              <a href="https://classicdb.ch/?spell=22749" class="rare" target="_blank" data-toggle="tooltip" data-html="true">Spell
+              <a href="https://classic.wowhead.com/spell=22749/enchant-weapon-spell-power" target="_blank">Spell
                 Power</a>
             </li>
           </ul>
@@ -382,7 +387,7 @@
         </div>
 
         <!-- Consumables Tab -->
-        <div class="tab-pane fade" id="consumables">
+        <!-- <div class="tab-pane fade" id="consumables">
           <br>
           <h3 class="warlock">Consumables</h3>
           <p>Standard Consumables: </p>
@@ -418,7 +423,7 @@
               aggro temporarily.</li>
           </ul>
           <hr>
-        </div>
+        </div> -->
       </div>
     </main>
 
@@ -435,8 +440,8 @@
   <!-- Placed at the end of the document so the pages load faster -->
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="/js//jquery.hoverIntent.min.js"></script>
-  <script src="/js/jquery.scrollbar.min.js"></script>
+  <script src="js//jquery.hoverIntent.min.js"></script>
+  <script src="js/jquery.scrollbar.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
 

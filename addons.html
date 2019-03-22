@@ -1,140 +1,254 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Classic-Guides is the best resource around for TLDR class & profession guides."
+    />
+    <meta name="author" content="Classic-Guides" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Classic-Guides is the best resource around for TLDR class & profession guides.">
-  <meta name="author" content="Classic-Guides">
+    <title>Classic-Guides - Addons</title>
 
-  <title>Classic-Guides - Addons</title>
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- Bootstrap core CSS -->
-  <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="/css/styles.css" rel="stylesheet" />
+    <!-- Hover.css -->
+    <link rel="stylesheet" href="/css/hover-min.css" />
+    <!-- jQuery Scroll Bar -->
+    <link rel="stylesheet" href="css/jquery.scrollbar.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon" />
+  </head>
 
-  <!-- Custom styles for this template -->
-  <link href="/css/styles.css" rel="stylesheet">
-  <!-- Hover.css -->
-  <link rel="stylesheet" href="/css/hover-min.css">
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="/imgs/favicon.ico" type="image/x-icon">
+  <body>
+    <div class="overlay"></div>
 
-</head>
-
-<body>
-  <div class="overlay">
-  </div>
-
-  <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <header class="masthead mb-auto">
-      <div class="inner">
-        <h3 class="masthead-brand">
-          <a href="index.html">Classic-Guides</a>
-        </h3>
-        <nav class="nav nav-masthead mt-2 justify-content-center">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link dropdown-toggle" href="#!" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">Class Guides</a>
-          <div class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" href="druid.html">Druid</a>
-            <a class="dropdown-item" href="hunter.html">Hunter</a>
-            <a class="dropdown-item" href="mage.html">Mage</a>
-            <a class="dropdown-item" href="paladin.html">Paladin</a>
-            <a class="dropdown-item" href="priest.html">Priest</a>
-            <a class="dropdown-item" href="rogue.html">Rogue</a>
-            <a class="dropdown-item" href="shaman.html">Shaman</a>
-            <a class="dropdown-item" href="warlock.html">Warlock</a>
-            <a class="dropdown-item" href="warrior.html">Warrior</a>
-
-          </div>
-
-          <div class="dropdown show ml-3">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">
-              Profession Guides
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item disabled" href="#">Alchemy</a>
-              <a class="dropdown-item disabled" href="#">Blacksmithing</a>
-              <a class="dropdown-item disabled" href="#">Enchanting</a>
-              <a class="dropdown-item disabled" href="#">Engineering</a>
-              <a class="dropdown-item disabled" href="#">Herbalism</a>
-              <a class="dropdown-item disabled" href="#">Leatherworking</a>
-              <a class="dropdown-item disabled" href="#">Minning</a>
-              <a class="dropdown-item disabled" href="#">Skinning</a>
-              <a class="dropdown-item disabled" href="#">Tailoring</a>
+    <div class="container d-flex w-100 h-100 p-3 flex-column">
+      <header class="masthead">
+        <div class="inner">
+          <h3 class="masthead-brand">
+            <a href="index.html">Classic-Guides</a>
+          </h3>
+          <nav class="nav nav-masthead mt-2 justify-content-center">
+            <a class="nav-link" href="index.html">Home</a>
+            <a
+              class="nav-link dropdown-toggle"
+              href="#!"
+              id="dropdown01"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Class Guides</a
+            >
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="druid.html">Druid</a>
+              <a class="dropdown-item" href="hunter.html">Hunter</a>
+              <a class="dropdown-item" href="mage.html">Mage</a>
+              <a class="dropdown-item" href="paladin.html">Paladin</a>
+              <a class="dropdown-item" href="priest.html">Priest</a>
+              <a class="dropdown-item" href="rogue.html">Rogue</a>
+              <a class="dropdown-item" href="shaman.html">Shaman</a>
+              <a class="dropdown-item" href="warlock.html">Warlock</a>
+              <a class="dropdown-item" href="warrior.html">Warrior</a>
             </div>
+
+            <!-- <div class="dropdown show ml-3">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Profession Guides
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item disabled" href="#">Alchemy</a>
+                    <a class="dropdown-item disabled" href="#">Blacksmithing</a>
+                    <a class="dropdown-item disabled" href="#">Enchanting</a>
+                    <a class="dropdown-item disabled" href="#">Engineering</a>
+                    <a class="dropdown-item disabled" href="#">Herbalism</a>
+                    <a class="dropdown-item disabled" href="#">Leatherworking</a>
+                    <a class="dropdown-item disabled" href="#">Minning</a>
+                    <a class="dropdown-item disabled" href="#">Skinning</a>
+                    <a class="dropdown-item disabled" href="#">Tailoring</a>
+                  </div>
+                </div> -->
+            <a class="nav-link ml-3 active" href="addons.html">Addons</a>
+            <a
+              class="nav-link"
+              href="https://classic.wowhead.com/database"
+              target="_blank"
+              >Wowhead DB</a
+            >
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner">
+        <!-- <h1 class="cover-heading q">Addons</h1>
+        <img src="imgs/addons-icon.png" alt="Addons" />
+        <p class="lead">
+          Here you'll find a list of useful & essential addons for Classic WoW
+          (1.12).
+        </p> -->
+        <div class="row mx-0 class-header">
+          <div class="class-id">
+            <h1 class="cover-heading q">Addons</h1>
+            <img src="imgs/addons-icon.png" alt="Addons" class="ml-3" />
           </div>
-          <a class="nav-link active ml-3" href="addons.html">Addons</a>
-          <a class="nav-link" href="https://classicdb.ch/" target="_blank">ClassicDB</a>
-        </nav>
-      </div>
-    </header>
+        </div>
 
-    <main role="main" class="inner cover">
-      <h1 class="cover-heading q">Addons</h1>
-      <p class="lead">Here you'll find a list of useful & essential addons for Classic WoW (1.12).</p>
+        <div class="addon-listing">
+          <h4 class="q">Click the addon name to download</h4>
+          <ul>
+            <li>
+              <a
+                href="https://drive.google.com/open?id=1587KdKSRHfabyToCMJVF0nbslDdAy_hh"
+                target="_blank"
+                ><strong>Questie</strong></a
+              >
+              - A standalone Classic QuestHelper. <strong>IMPORTANT!</strong>
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/open?id=19BYZJYjkIQ0P40Vrf8v42a9ImDmpJ17v"
+                target="_blank"
+                ><strong>Cartographer</strong></a
+              >
+              - Addon to manipulate in-game map & give you coordinates.
+              <strong>IMPORTANT!</strong>
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/open?id=1djVgs1nl1uCLDm1kPx34_n6jaziKAphG"
+                target="_blank"
+                ><strong>pfUI</strong></a
+              >
+              - Full UI replacement in one addon. The design is highly inspired
+              by TukUI and ElvUI.
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/open?id=1La1vlV28m7tpQWeNOjCpInuwXnf-eN2l"
+                target="_blank"
+                ><strong>AtlasLoot Enhanced</strong></a
+              >
+              - Shows possible loot from dungeons, raids and much more.
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/open?id=1ABAWZZ83WfwnYh2xoV4FQkkPsZ2miVx6"
+                target="_blank"
+                ><strong>Enemy Cast Bar</strong></a
+              >
+              - Shows a replication of your targets cast bar.
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/open?id=1KMFnjlcrR3Tvn3t_VqTFrOtWsMkPf1nt"
+                target="_blank"
+                ><strong>DPSMate</strong></a
+              >
+              - Damage Meter.
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/open?id=1c0e8IrbzD_wG4810ONMNP17o1u0zfg3W"
+                target="_blank"
+                ><strong>EquipCompare</strong></a
+              >
+              - Compare items easily with ones you have equipped.
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/open?id=10QCSIYNf28F0mpUkkSduXO4YxrTY3MIS"
+                target="_blank"
+                ><strong>CooldownCount</strong></a
+              >
+              - Allows you to see time until actions have cooled down in the
+              buttons.
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/open?id=13T8AL-WaQqUW1eMtru-B7qu_Db9PQyGO"
+                target="_blank"
+                ><strong>KLHThreatMeter</strong></a
+              >
+              - Threat meter.
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/open?id=1PKNrzpyXnWAUXe2YiAGV8lRccrvtXbVl"
+                target="_blank"
+                ><strong>Luna Unitframes</strong></a
+              >
+              - Unit Frame replacement, similar to ShadowedUnitFrames.
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/open?id=1-hncGH2p-jip4uwsrU_60nJC-SxLqz5B"
+                target="_blank"
+                ><strong>BigWigs</strong></a
+              >
+              - Boss Mods with timer bars for raiding.
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/open?id=1FHTWp6taIKZAsTu0h6lXQFzui4TqxTYX"
+                target="_blank"
+                ><strong>CC Watch</strong></a
+              >
+              - Timer bars for CC & other abilities.
+            </li>
+          </ul>
 
-      <div class="addon-listing">
-        <h4 class="q">Click the addon name to download</h4>
-        <ul>
-          <li><a href="https://drive.google.com/open?id=1587KdKSRHfabyToCMJVF0nbslDdAy_hh" target="_blank"><strong>Questie</strong></a>
-            - A standalone Classic QuestHelper. <strong>IMPORTANT!</strong></li>
-          <li><a href="https://drive.google.com/open?id=19BYZJYjkIQ0P40Vrf8v42a9ImDmpJ17v" target="_blank"><strong>Cartographer</strong></a>
-            - Addon to manipulate in-game map & give you coordinates. <strong>IMPORTANT!</strong></li>
-          <li><a href="https://drive.google.com/open?id=1djVgs1nl1uCLDm1kPx34_n6jaziKAphG" target="_blank"><strong>pfUI</strong></a>
-            - Full UI replacement in one addon. The design is highly inspired by TukUI and ElvUI.</li>
-          <li><a href="https://drive.google.com/open?id=1La1vlV28m7tpQWeNOjCpInuwXnf-eN2l" target="_blank"><strong>AtlasLoot
-                Enhanced</strong></a> - Shows possible loot from dungeons, raids and much more.</li>
-          <li><a href="https://drive.google.com/open?id=1ABAWZZ83WfwnYh2xoV4FQkkPsZ2miVx6" target="_blank"><strong>Enemy
-                Cast Bar</strong></a> - Shows a replication of your targets cast bar.</li>
-          <li><a href="https://drive.google.com/open?id=1KMFnjlcrR3Tvn3t_VqTFrOtWsMkPf1nt" target="_blank"><strong>DPSMate</strong></a>
-            - Damage Meter.</li>
-          <li><a href="https://drive.google.com/open?id=1c0e8IrbzD_wG4810ONMNP17o1u0zfg3W" target="_blank"><strong>EquipCompare</strong></a>
-            - Compare items easily with ones you have equipped.</li>
-          <li><a href="https://drive.google.com/open?id=10QCSIYNf28F0mpUkkSduXO4YxrTY3MIS" target="_blank"><strong>CooldownCount</strong></a>
-            - Allows you to see time until actions have cooled down in the buttons.</li>
-          <li><a href="https://drive.google.com/open?id=13T8AL-WaQqUW1eMtru-B7qu_Db9PQyGO" target="_blank"><strong>KLHThreatMeter</strong></a>
-            - Threat meter.</li>
-          <li><a href="https://drive.google.com/open?id=1PKNrzpyXnWAUXe2YiAGV8lRccrvtXbVl" target="_blank"><strong>Luna
-                Unitframes</strong></a> - Unit Frame replacement, similar to ShadowedUnitFrames.</li>
-          <li><a href="https://drive.google.com/open?id=1-hncGH2p-jip4uwsrU_60nJC-SxLqz5B" target="_blank"><strong>BigWigs</strong></a>
-            - Boss Mods with timer bars for raiding.</li>
-          <li><a href="https://drive.google.com/open?id=1FHTWp6taIKZAsTu0h6lXQFzui4TqxTYX" target="_blank"><strong>CC
-                Watch</strong></a> - Timer bars for CC & other abilities.</li>
-        </ul>
+          <h3 class="q">How To Install:</h3>
+          <ol>
+            <li>
+              Download the addon by clicking the links above, then clicking the
+              download button in the top-right corner.
+            </li>
+            <li>
+              Extract the downloaded Zip folder.
+              <strong>(ex: Questie.zip)</strong>
+            </li>
+            <li>
+              Copy the new extracted folder <strong>(Questie)</strong> and paste
+              it into <strong>WoW-Directory/Interface/Addons</strong><br />
+              Note: "WoW-Directory" will be the name of your World of Warcraft
+              1.12 folder.
+            </li>
+            <li>Restart WoW</li>
+          </ol>
 
-        <h3 class="q">How To Install:</h3>
-        <ol>
-          <li>Download the addon by clicking the links above, then clicking the download button in the top-right
-            corner.</li>
-          <li>Extract the downloaded Zip folder. <strong>(ex: Questie.zip)</strong></li>
-          <li>Copy the new extracted folder <strong>(Questie)</strong> and paste it into <strong>WoW-Directory/Interface/Addons</strong><br>
-            Note: "WoW-Directory" will be the name of your World of Warcraft 1.12 folder.</li>
-          <li>Restart WoW</li>
-        </ol>
+          <p class="lead">
+            All addons are downloaded directly from Google Drive.
+          </p>
+        </div>
+      </main>
 
-        <p class="lead">All addons are downloaded directly from Google Drive.</p>
-      </div>
+      <footer class="mastfoot mt-auto text-center">
+        <div class="inner">
+          <p>
+            Want more addons?
+            <a href="https://legacy-wow.com/Classic-addons/" target="_blank"
+              >click here</a
+            >
+          </p>
+        </div>
+      </footer>
+    </div>
 
-    </main>
-
-    <footer class="mastfoot mt-auto text-center">
-      <div class="inner">
-        <p>Want more addons? <a href="https://legacy-wow.com/Classic-addons/" target="_blank">click here</a></p>
-      </div>
-    </footer>
-  </div>
-
-
-  <!-- Bootstrap core JavaScript
+    <!-- Bootstrap core JavaScript
     ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="/js//jquery.hoverIntent.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-  <script src="js/main.js"></script>
-
-</body>
-
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js//jquery.hoverIntent.min.js"></script>
+    <script src="js/jquery.scrollbar.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

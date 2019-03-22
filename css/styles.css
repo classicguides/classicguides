@@ -62,6 +62,10 @@ body {
   max-width: 42em;
 }
 
+.scroll-wrapper {
+  padding: 0 !important;
+}
+
 /*
  * Header
  */
@@ -102,6 +106,25 @@ body {
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
+}
+
+.class-header {
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.class-header .class-id {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+.class-header .class-id img {
+  max-width: 50px;
+}
+
+.class-header p {
+  margin: 0;
 }
 
 @media (min-width: 48em) {
