@@ -155,9 +155,9 @@ body {
 }
 
 .mastfoot .inner a {
-  font-weight: 500;
-  font-size: 1.2rem;
-  /* color: rgba(255, 255, 255, 0.5); */
+  /* font-weight: 500; */
+  /* font-size: 1.2rem; */
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /* Custom STYLES */
