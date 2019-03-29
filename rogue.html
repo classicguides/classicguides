@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137269469-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-137269469-1');
+</script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Rogue class guide for Classic World of Warcraft">
@@ -49,7 +59,7 @@
 
           </div>
 
-          <div class="dropdown show ml-3">
+          <!-- <div class="dropdown show ml-3">
             <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
               Profession Guides
@@ -65,44 +75,51 @@
               <a class="dropdown-item disabled" href="#">Skinning</a>
               <a class="dropdown-item disabled" href="#">Tailoring</a>
             </div>
-          </div>
+          </div> -->
           <a class="nav-link ml-3" href="addons.html">Addons</a>
-          <a class="nav-link" href="https://classicdb.ch/" target="_blank">ClassicDB</a>
+          <a class="nav-link" href="https://classic.wowhead.com/database" target="_blank">Wowhead DB</a>
         </nav>
       </div>
     </header>
 
     <main role="main" class="mt-3">
 
-      <div class="row mx-0">
+      <!-- <div class="row mx-0">
         <h1 class="cover-heading  rogue mb-3">Rogue</h1>
         <p class="ml-auto"><span class="rogue">Author:</span> Oto / Nostalrius
           <br>
           <span class="rogue">Source:</span> <a href="https://forum.nostalrius.org/viewtopic.php?f=37&t=5412">Nostalrius
             &nearr;</a>
         </p>
+      </div> -->
+      <div class="row mx-0 class-header">
+        <div class="class-id">
+          <h1 class="cover-heading rogue">Rogue</h1>
+          <img src="imgs/Original/Rogue.png" alt="Rogue" class="ml-3">         
+        </div>
+        <p class="ml-auto"><span class="rogue">Author:</span> Oto / Nostalrius
+          <br>
+          <span class="rogue">Source:</span> <a href="https://forum.nostalrius.org/viewtopic.php?f=37&t=5412">Nostalrius
+            &nearr;</a>
+        </p>
       </div>
+
+      <p class="lead">All information in this guide is based off of patch 1.12 private servers. Some information may change with the official release of Classic WoW.</p>
       <ul class="nav nav-tabs">
         <li class="nav-item">
           <a class="nav-link active show" data-toggle="tab" href="#overview">Overview</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#talents">Talents</a>
+          <a class="nav-link" data-toggle="tab" href="#talents">60 Talents</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#gear">Pre-Raid Gear</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#stat-priority">Stat Priorities</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#enchants">Enchants</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#consumables">Consumables</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#macros">Macros</a>
+          <a class="nav-link" data-toggle="tab" href="#leveling">Leveling</a>
         </li>
       </ul>
       <div id="myTabContent" class="tab-content">
@@ -282,46 +299,6 @@
           <hr>
         </div>
 
-        <!-- Stat Priority -->
-        <div class="tab-pane fade" id="stat-priority">
-          <br>
-          <h3 class="rogue">Stat Priorities</h3>
-          <hr>
-          <ol>
-            <li>
-              <strong>Agility</strong> <br>
-              - Increases attack power with both melee and ranged weapons by 1 <br>
-              - Increases your crit chance by 1% per 29 Agility <br>
-              - Increases Armor and Dodge
-            </li>
-
-            <li>
-              <strong>Strength</strong> <br>
-              - Increases attack power with melee weapons by 1.
-            </li>
-
-            <li>
-              <strong>Stamina</strong> <br>
-              - Increases health points by 10 per point
-            </li>
-
-            <li>
-              <strong>Intellect</strong> <br>
-              - Increases the rate at which weapon skills improve
-            </li>
-
-            <li>
-              <strong>Spirit</strong> <br>
-              - Increases health & mana regeneration rates = useless stat
-            </li>
-
-            <li>
-              <strong>Armor</strong> <br>
-              - Decreases the amount of damage taken from physical attacks
-              - A stat you don’t have to care about
-            </li>
-          </ol>
-        </div>
 
         <!-- Enchants Tab -->
         <div class="tab-pane fade" id="enchants">
@@ -366,78 +343,10 @@
           <hr>
         </div>
 
-        <!-- Consumables Tab -->
-        <div class="tab-pane fade" id="consumables">
+        <div class="tab-pane fade" id="leveling">
           <br>
-          <h3 class="rogue">Consumables</h3>
-          <p>Here is a list of useful consumables you should bring to a raid.</p>
-          <h5 class="rogue">Mandatory Stuff: </h5>
-          <ul>
-            <li>Elixir of the Mongoose or Greater Agility</li>
-            <li>Winterfall Firewater</li>
-            <li>Juju Power</li>
-            <li>Grilled Squid / Blessed Sunfruit</li>
-            <li>Instant Poison VI</li>
-            <li>Heavy Runecloth Bandage</li>
-            <li>Flash Powder (Used for Vanish)</li>
-            <li>Blinding Powder (Used for Blind)</li>
-            <li>Thistle Tea</li>
-            <li>Crystal Charge / Ez-Thro Dynamite II / Stratholme Holy Water (for aoe)</li>
-          </ul>
-
-          <h5 class="rogue">Additional / Survivability</h5>
-          <ul>
-            <li>Flask of the Titans</li>
-            <li>Sheen of Zanza</li>
-            <li>Spirit of Zanza</li>
-            <li>Swiftness of Zanza</li>
-            <li>Elixir of Fortitude</li>
-            <li>Elixir of Demonslaying (for Doomlord Kazzak)</li>
-            <li>Elixir of Poison Resistance (nice for AQ/nax)</li>
-            <li>Gift of Arthas +10 Shadow res</li>
-            <li>Major Troll’s Blood Potion</li>
-            <li>Rumsey Rum Black Label</li>
-            <li>Dirge’s Kickin’ Chimaerok Chops</li>
-            <li>Free Action Potion for all bosses, who stun & do movement impairing effects</li>
-            <li>Jungle Remedy nice to have for 5 mans</li>
-            <li>Major Healing Potion</li>
-            <li>Restorative Potion</li>
-            <li>All Resistance Potions</li>
-          </ul>
-
-          <hr>
+          <h3 class="rogue">Leveling</h3>
         </div>
-
-        <!-- Macros Tab -->
-        <div class="tab-pane fade" id="macros">
-          <br>
-          <h3 class="rogue">Macros</h3>
-
-          <p>This macro allows you to attack your target with Sinister Strike and turns on the auto attack. Useful for
-            every target switch when you don’t have energy left or you don’t wanna right click on each target.
-            Attention: you need to put the Spell Attack in your action bar! In my example I put the Spell on the first
-            action bar on the slot 9. This can also be used for BS or HEMO. Just replace the spell name and the energy
-            cost.</p>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Sinister (BS/Hemo) + Auto Attack</h5>
-              <p class="card-text">/cast Sinister Strike
-                <br> /script if not IsCurrentAction(9) then UseAction(9) end;</p>
-            </div>
-          </div>
-          <br>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Use Trinket Button</h5>
-              <p class="card-text">/script UseInventoryItem(13);</p>
-            </div>
-          </div>
-          <hr>
-          <p>This Screenshot can help you by finding the best positions and slot numbers for your macros.</p>
-          <img src="imgs/actionbars.jpg" alt="Macro" class="img-fluid">
-          <hr>
-        </div>
-      </div>
     </main>
 
     <footer class="mastfoot mt-auto text-center">

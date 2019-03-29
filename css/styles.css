@@ -155,9 +155,15 @@ body {
 }
 
 .mastfoot .inner a {
-  /* font-weight: 500; */
-  /* font-size: 1.2rem; */
-  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.mastfoot .inner a#contact-link {
+  color: #ffffff !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
 }
 
 /* Custom STYLES */
@@ -337,8 +343,13 @@ body {
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 400px) {
   .masthead-brand {
     font-size: 2.5rem !important;
+  }
+
+  .class-header div,
+  .class-header p {
+    margin: auto !important;
   }
 }
