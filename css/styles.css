@@ -88,7 +88,7 @@ body {
 
 .nav-masthead .nav-link {
   padding: 0.25rem 0;
-  font-weight: 700;
+  font-weight: 500;
   color: rgba(255, 255, 255, 0.5);
   background-color: transparent;
   border-bottom: 0.25rem solid transparent;
@@ -145,6 +145,11 @@ body {
 .cover .btn-lg {
   padding: 0.75rem 1.25rem;
   font-weight: 700;
+}
+
+.disabled {
+  cursor: not-allowed;
+  filter: grayscale(100%);
 }
 
 /*
@@ -351,5 +356,13 @@ body {
   .class-header div,
   .class-header p {
     margin: auto !important;
+  }
+
+  .lead {
+    font-size: 1.1rem !important;
+  }
+
+  .nav.nav-tabs {
+    flex-direction: column;
   }
 }

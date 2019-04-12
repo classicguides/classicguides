@@ -89,7 +89,7 @@
       <div class="row mx-0 class-header">
         <div class="class-id">
           <h1 class="cover-heading priest">Priest</h1>
-          <img src="/imgs/Original/Priest.png" alt="Priest" class="ml-3">
+          <img src="imgs/class_icons/priest-transparent.png" alt="Priest" class="ml-3">
         </div>
         <p class="ml-auto">
           <span class="priest">Source:</span> <a href="https://vanillapriest.wordpress.com/" target="_blank">Vanilla
@@ -99,17 +99,18 @@
 
       <p class="lead">All information in this guide is based off of patch 1.12 private servers. Some information may change with the official release of Classic WoW.</p>
  
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
+      
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
           <a class="nav-link active show" data-toggle="tab" href="#overview">Overview</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" role="presentation">
           <a class="nav-link" data-toggle="tab" href="#talents">60 Talents</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" role="presentation">
           <a class="nav-link" data-toggle="tab" href="#gear">Pre-Raid Gear</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" role="presentation">
           <a class="nav-link" data-toggle="tab" href="#enchants">Enchants</a>
         </li>
         <!-- <li class="nav-item">
@@ -124,11 +125,15 @@
         <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#leveling">Leveling</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#downranking">Down Ranking Spells</a>
+        </li>
+
       </ul>
 
       <div id="myTabContent" class="tab-content">
         <!-- Overview Tab -->
-        <div class="tab-pane fade active show" id="overview">
+        <div class="tab-pane fade active show" id="overview" role="tabpanel">
           <p class="mt-2">Priests are powerful healers, and can be deadly as ranged DPS, if specced properly. Priests
             were long the
             premier healers in World of Warcraft, and although other classes have been improved to match their prowess,
@@ -151,7 +156,7 @@
         </div>
 
         <!-- Talents Tab -->
-        <div class="tab-pane fade" id="talents">
+        <div class="tab-pane fade" id="talents" role="tabpanel">
           <br>
           <h3 class="priest mb-3">Talents</h3>
           <h5 class="priest">PVE Healing</h5>
@@ -192,7 +197,7 @@
         </div>
 
         <!-- Pre-Raid Gear Tab -->
-        <div class="tab-pane fade" id="gear">
+        <div class="tab-pane fade" id="gear" role="tabpanel">
           <br>
           <h3 class="priest">Pre-Raid Gear</h3>
           <p>Below is a google doc containing all the BiS items for priests in Classic WoW. <Br>
@@ -206,7 +211,7 @@
         </div>
 
         <!-- Enchants Tab -->
-        <div class="tab-pane fade" id="enchants">
+        <div class="tab-pane fade" id="enchants" role="tabpanel">
           <br>
           <h3 class="priest">Enchants</h3>
           <h5 class="priest">Healing</h5>
@@ -439,7 +444,7 @@
           <hr>
         </div> -->
 
-        <div class="tab-pane fade" id="leveling">
+        <div class="tab-pane fade" id="leveling" role="tabpanel">
           <br>
           <h3 class="priest">Leveling 1-60</h3>
           <p>Priest are one of the easiest classes to level if done right. You’ll use a wand as your primary source of damage dealing and rely on the mana regeneration provided from the Spirit Tap talent. Levelling this way means you should never go out of mana (OOM) unless you pull too many mobs at once and need to heal yourself. This saves you a lot of time and money as you won’t need to drink to regenerate mana—though you should carry some drinks just in case.</p>
@@ -528,6 +533,19 @@
 
           <p>You can mix the rotation up now and then if you’re finding at the end of each kill you have too much mana left (e.g. cast more Smites, Mind Flays or another Mind Blast) or too little mana left (Power Word: Shield less often, wand more). It’ll depend on the level/HP of the mobs you’re dealing with as well as how much damage you’re taking.</p>
         </div>
+
+        <div class="tab-pane fade" id="downranking" role="tabpanel">
+          <br>
+          <h3 class="priest">Down Ranking Healing Spells</h3>
+          <p>As a healer it is crucial not to always use your max-rank abilities as you'll go OOM too fast. Instead, you'll want to down-rank some of your abilities to maximize mana efficiency. Below are the most mana-efficient ranks to use once you're level 60: </p>
+          <ul>
+            <li>Heal (Rank 3)</li>
+            <li>Greater Heal (Rank 1)</li>
+            <li>Flash Heal (Rank 4)</li>
+            <li>Greater Heal (Rank 4) For "o shit" moments!</li>
+            <li>Renew/Prayer of Healing (Max Rank)</li>
+          </ul>
+        </div>
       </div>
     </main>
 
@@ -548,7 +566,5 @@
   <script src="js/jquery.scrollbar.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
-
 </body>
-
 </html>
